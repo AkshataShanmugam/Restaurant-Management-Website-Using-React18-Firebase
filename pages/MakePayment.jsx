@@ -3,6 +3,7 @@ import GooglePayButton from "@google-pay/button-react"
 import CheckOut from './CheckOut';
 
 export default function MakePayment() {
+  let price = JSON.parse(localStorage.getItem('checkOutTotalPriceFinal'));
   return (
     <div>
         <CheckOut />
@@ -35,7 +36,7 @@ export default function MakePayment() {
                 transactionInfo: {
                     totalPriceStatus: 'FINAL',
                     totalPriceLabel: 'Total',
-                    totalPrice: '1',
+                    totalPrice: `${price}`,
                     currencyCode: 'USD',
                     countryCode: 'US',
                 },
