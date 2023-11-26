@@ -44,7 +44,6 @@ export default function Navbar() {
           </Link>
           <div className="nav--components">
             <select onChange={handleOptionChange} value={currentPath} className="nav--select">
-              <option value="">LOGIN</option>
               <option value="/">HOME</option>
               <option value="/toOrder">TO ORDER</option>
               <option value="/signup">SIGN UP</option>
