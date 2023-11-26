@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import logo from "../src/images/logo.png";
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
@@ -11,6 +11,10 @@ import data from "./ConfirmMenuItems.jsx"
 const ConfirmOrder = () => {
 
     const navigate = useNavigate();
+
+    const location = useLocation();
+    const currentPath = location.pathname;
+
     const storedItems = JSON.parse(localStorage.getItem('menuItems')) || {};
     const userOrder = storedItems; 
     
@@ -79,12 +83,10 @@ const ConfirmOrder = () => {
                     <div className="nav--components">
                     <select
                         onChange={handleOptionChange}
-                        value={selectedOption}
+                        value={currentPath}
                         className="nav--select"
                     >
-                        <option value="" disabled hidden>
-                        More Options
-                        </option>
+                        <option value="/confirmOrder">CONFIRM ORDER</option>
                         <option value="/">HOME</option>
                         <option value="/logout">LOG OUT</option>
                         <option value="/checkOut">CHECK OUT</option>
