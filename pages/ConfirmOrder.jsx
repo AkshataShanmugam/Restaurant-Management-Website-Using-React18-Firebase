@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from "../src/images/logo.png";
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
@@ -73,7 +73,9 @@ const ConfirmOrder = () => {
         <div>
             <nav>
                 <div className='nav--div'>
-                    <img src={logo} className="nav--logo" />
+                    <Link to="/">
+                        <img src={logo} alt="Logo" className="nav--logo" />
+                    </Link>
                     <div className="nav--components">
                     <select
                         onChange={handleOptionChange}

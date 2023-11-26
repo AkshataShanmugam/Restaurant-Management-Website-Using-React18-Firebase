@@ -12,6 +12,7 @@ import Success from "../pages/OrderSuccess.jsx"
 import ForgotPassword from "../pages/ForgotPassword.jsx"
 import CheckOut from "../pages/CheckOut.jsx"
 import MakePayment from "../pages/MakePayment.jsx"
+import InsideOurKitchen from "./components/InsideOurKitchen.jsx"
 
 export default function App() {
     return (
@@ -31,6 +32,7 @@ export default function App() {
                     <Route path="/checkOut" element={ <CheckOut />} />
                     <Route path="/forgotPassword" element={ <ForgotPassword />} />
                     <Route path="/makePayment" element={ <MakePayment />} />
+                    <Route path="/insideOurKitchen" element={ <InsideOurKitchen />} />
                 </Routes>
             </BrowserRouter>
         </div>

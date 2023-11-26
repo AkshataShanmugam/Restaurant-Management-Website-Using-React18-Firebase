@@ -62,7 +62,6 @@ section {
 
 
 .hero--photo {
-/*     max-width: 1200px; */
     width: 80vw;
     align-self: center;
 }
@@ -153,7 +152,7 @@ section {
 
 .footer {
     text-align: center;
-    background-color: rgb(209, 199, 199);
+    box-shadow: 0px 5px 15px black;
     color: #0b0a0c ;
     padding: 10px;
 }
@@ -493,7 +492,7 @@ ul{
     justify-content: space-around;
     border: 1px solid rgb(51, 34, 34);
     border-radius: 10px;
-    margin: 40px 75px;
+    margin: auto 75px;
 }
 
 .contact-phone{
@@ -502,4 +501,94 @@ ul{
 
 .contact-email{
     margin: 20px;
+}
+
+.inside-our-kitchen--div{
+    background: linear-gradient(0deg, #e29e9e, #b5dbdb);
+}
+
+.inside-our-kitchen--heading{
+    text-align: center;
+    margin: 30px auto 50px auto;
+    word-spacing: 10px;
+    font-size: 50px;
+}
+
+.inside-our-kitchen--p{
+    text-align: center;
+    margin: 30px;
+    word-spacing: 5px;
+    font-size: xx-large;
+    color: black;
+    font-weight: bold;
+    padding: 0px 175px 75px 175px;
+}
+
+.inside-our-kichen--logo{
+    max-width: 30vw;
+    max-height: 30vw;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+.inside-our-kichen--images{
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 20%;
+    box-shadow: 0px 5px 15px goldenrod;
+}
+
+.background-container-img1 {
+    background-image: url("src/images/aboutus-1.png");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    font-size: xx-large;
+    padding: 20px;
+    max-width: 75vw;
+    max-height: 75vh;
+    margin: 0px auto 100px auto;
+    border-radius: 20px;
+    padding: 200px 50px;
+}
+
+.background-container-img2 {
+    background-image: url("src/images/aboutus-2.png");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    font-size: xx-large;
+    padding: 20px;
+    max-width: 75vw;
+    max-height: 75vh;
+    margin: 0px auto 100px auto;
+    border-radius: 20px;
+    padding: 300px 50px;
+}
+
+.background-container-img3 {
+    background-image: url("src/images/aboutus-3.png");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 20px;
+    max-width: 75vw;
+    max-height: 75vh;
+    margin: 0px auto 100px auto;
+    border-radius: 20px;
+    padding: 200px 50px;
+}
+
+.background-container-img4 {
+    background-image: url("src/images/aboutus-4.png");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    font-size: xx-large;
+    padding: 20px;
+    max-width: 75vw;
+    max-height: 75vh;
+    margin: auto;
+    border-radius: 20px;
+    padding: 200px 50px;
 }

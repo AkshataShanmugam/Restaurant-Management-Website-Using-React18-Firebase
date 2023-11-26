@@ -3,7 +3,7 @@ import Data from "./CheckOutData.jsx"
 import MakePayment from "./MakePayment.jsx";
 import React, { useState}  from 'react';
 
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from "../src/images/logo.png";
 
 const CheckOut = () => {
@@ -56,7 +56,9 @@ const CheckOut = () => {
             <div>
                 <nav>
                     <div className='nav--div'>
-                        <img src={logo} className="nav--logo" />
+                        <Link to="/">
+                            <img src={logo} alt="Logo" className="nav--logo" />
+                        </Link>
                         <div className="nav--components">
                         <select
                             onChange={handleOptionChange}
@@ -98,8 +100,9 @@ const CheckOut = () => {
             <div>
                 <nav>
                     <div className='nav--div'>
-                        <img src={logo} className="nav--logo" />
-                        <div className="nav--components">
+                        <Link to="/">
+                            <img src={logo} alt="Logo" className="nav--logo" />
+                        </Link><div className="nav--components">
                         <select
                             onChange={handleOptionChange}
                             value={selectedOption}
@@ -111,7 +114,6 @@ const CheckOut = () => {
                             <option value="/">HOME</option>
                             <option value="/logout">LOG OUT</option>
                             <option value="/placeOrder">PLACE ORDERS</option>
-                            <option value="/makePayment">MAKE PAYMENT</option>
                         </select>
                         </div>
                     </div>

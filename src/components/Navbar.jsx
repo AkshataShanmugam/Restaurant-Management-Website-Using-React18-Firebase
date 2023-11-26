@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../images/logo.png";
 import GetSignedInEmail from "../../pages/SignInCheck.jsx";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
   const check = GetSignedInEmail();
@@ -18,7 +18,9 @@ export default function Navbar() {
     return (
       <nav>
         <div className="nav--div">
-          <img src={logo} className="nav--logo" />
+        <Link to="/">
+          <img src={logo} alt="Logo" className="nav--logo" />
+        </Link>
           <div className="nav--components">
             <select onChange={handleOptionChange} value={selectedOption} className="nav--select">
               <option value="" disabled hidden>More Options</option>
@@ -35,7 +37,9 @@ export default function Navbar() {
     return (
       <nav>
         <div className="nav--div">
-          <img src={logo} className="nav--logo" />
+          <Link to="/">
+            <img src={logo} alt="Logo" className="nav--logo" />
+          </Link>
           <div className="nav--components">
             <select onChange={handleOptionChange} value={selectedOption} className="nav--select">
               <option value="" disabled hidden>More Options</option>
@@ -43,6 +47,7 @@ export default function Navbar() {
               <option value="/toOrder">TO ORDER</option>
               <option value="/signup">SIGN UP</option>
               <option value="/signin">LOGIN</option>
+              <option value="/insideOurKitchen">OUR KITCHEN</option>
             </select>
           </div>
         </div>

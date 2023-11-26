@@ -53,6 +53,9 @@ export default function Main() {
             </section> */}
             <AboutUs />
             <ContactUs />
+            <br />
+            <br />
+            <br />
             <Footer />
         </div>
     )

@@ -30,7 +30,9 @@ export default function MakeOrders() {
     <div className="makeOrders--div">
       <nav>
         <div className="nav--div">
-            <img src={logo} className="nav--logo" />
+            <Link to="/">
+              <img src={logo} alt="Logo" className="nav--logo" />
+            </Link>
             <div className="nav--components">
               <select
                 onChange={handleOptionChange}
