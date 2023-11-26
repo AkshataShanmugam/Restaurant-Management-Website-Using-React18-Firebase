@@ -579,6 +579,15 @@ ul{
 }
 
 @media (max-width: 800px) {
+    .hero--all-text {
+        margin: 20px;
+        background-color: #0b0a0c;
+    }
+
+    .about-us {
+        margin: 25px;
+        background-color: #0b0a0c;
+    }
     .contact-us{
         display: flex;
         align-items: center;
@@ -586,6 +595,7 @@ ul{
         border: 1px solid rgb(51, 34, 34);
         border-radius: 10px;
         margin: auto 25px;
+        padding: 20px
     }
     
     .contact-phone{
