@@ -525,9 +525,18 @@ ul{
 }
 
 .inside-our-kichen--logo{
-    width: 50vw;
+    width: 25vw;
     padding: 30px;
     border-radius: 50px;
+}
+
+@media (max-width: 1000px) {
+    .inside-our-kichen--logo{
+        width: 65vw;
+        padding: 30px;
+        border-radius: 50px;
+    }
+    
 }
 
 .inside-our-kichen--images{
