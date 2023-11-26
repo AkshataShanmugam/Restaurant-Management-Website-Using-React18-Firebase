@@ -24,14 +24,15 @@ nav {
 }
 
 .nav--logo {
-    max-width: 500px;
+    max-width: 100px;
     border-radius: 3px;
+    height: 50px;
 }
 
 .nav--div {
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
 }
 
 section {
