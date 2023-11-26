@@ -16,6 +16,10 @@ const SignUp = () => {
     localStorage.setItem('tableNumber', JSON.stringify(e.target.value));
   };
 
+  const navigateToSignIn = () => {
+    navigate("/signIn");
+  };
+
   const navigate = useNavigate();
   const signUp = (e) => {
     e.preventDefault();
@@ -92,10 +96,11 @@ const SignUp = () => {
             <br></br>
             <p className="sign-in--pass">Please ensure that password is greater than 6 characters.</p>
           </form>
-            <div className="sign-up--offer">
-              <h2>Special Offer!</h2>
-              <p>By signing up now and get 10% off your first purchase!</p>
+          <div className="sign-up--offer">
+            <h2>Special Offer!</h2>
+            <p>By signing up now and get 10% off your first purchase!</p>
           </div>
+          <button className="toOrder--links" onClick={navigateToSignIn}> Log In Instead? </button>
         </div>
       </div>
     </div>

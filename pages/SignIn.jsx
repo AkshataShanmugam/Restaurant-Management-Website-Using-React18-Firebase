@@ -21,6 +21,10 @@ const SignIn = () => {
   const navigateToPage = () => {
     navigate("/forgotPassword");
   };
+
+  const navigateToSignUp = () => {
+    navigate("/signUp");
+  };
   
   const signIn = (e) => {
     e.preventDefault();
@@ -69,7 +73,7 @@ const SignIn = () => {
         <form onSubmit={signIn}>
           <br></br>
           <h1>Login to your Account</h1>
-          <p className="login--instructions"> Welcome back! Log in to your account to continue exploring our platform. </p>
+          <p className="login--instructions"> Welcome back! Continue exploring Comida. </p>
           <input
             className="sign-in--input"
             type="email"
@@ -98,6 +102,9 @@ const SignIn = () => {
         </form>
         <button className="toOrder--links" onClick={navigateToPage}>Forgot Password</button>
         <br></br>
+        <br></br>
+        <br></br>
+        <button className="toOrder--links" onClick={navigateToSignUp}>Sign Up Instead?</button>
       </div>
     </div>
   );
