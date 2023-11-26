@@ -30,8 +30,8 @@ export default function MakePayment() {
                     },
                 ],
                 merchantInfo: {
-                    merchantId: '674839472347384973824723824738478',
-                    merchantName: 'Temp ID',
+                    merchantId: '24723824738478',
+                    merchantName: 'La Comida',
                 },
                 transactionInfo: {
                     totalPriceStatus: 'FINAL',
