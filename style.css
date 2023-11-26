@@ -522,8 +522,6 @@ ul{
     color: black;
     font-weight: bold;
     padding: 0px 175px 75px 175px;
-    max-width: 100%;
-    max-height: 100%;
 }
 
 .inside-our-kichen--logo{
@@ -569,4 +567,50 @@ ul{
 
 .background-container-img4 {
     background-image: url("src/images/aboutus-4.png");
+}
+
+@media (max-width: 800px) {
+    .contact-us{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid rgb(51, 34, 34);
+        border-radius: 10px;
+        margin: auto 25px;
+    }
+    
+    .contact-phone{
+        margin: 15px;
+    }
+    
+    .contact-email{
+        margin: 15px;
+    }
+
+    .inside-our-kitchen--p{
+        text-align: center;
+        margin: 30px;
+        word-spacing: 5px;
+        font-size: large;
+        color: black;
+        font-weight: bold;
+        padding: 0px 50px 75px 50px;
+    }
+    .background-container-img1,
+    .background-container-img2,
+    .background-container-img3,
+    .background-container-img4 {
+        background-size: cover;
+        background-position: center;
+        color: #ffffff;
+        font-size: large;
+        padding: 20px;
+        max-width: 75vw;
+        max-height: 75vh;
+        margin: 0px auto 100px auto;
+        border-radius: 20px;
+        padding: 100px 50px;
+}
+
+    
 }
