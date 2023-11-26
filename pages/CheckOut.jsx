@@ -1,13 +1,16 @@
 import SpecialDishes from "./CheckOutOrders.jsx"
 import Data from "./CheckOutData.jsx"
 import MakePayment from "./MakePayment.jsx";
-import React, { useState}  from 'react';
+import React, { useState }  from 'react';
 
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import logo from "../src/images/logo.png";
 
 const CheckOut = () => {
     const navigate = useNavigate();
+
+    const location = useLocation();
+    const currentPath = location.pathname;
 
     const [selectedOption, setSelectedOption] = useState("");
     const handleOptionChange = (event) => {
@@ -62,12 +65,10 @@ const CheckOut = () => {
                         <div className="nav--components">
                         <select
                             onChange={handleOptionChange}
-                            value={selectedOption}
+                            value={currentPath}
                             className="nav--select"
                         >
-                            <option value="" disabled hidden>
-                            More Options
-                            </option>
+                            <option value="/checkOut">CHECK OUT</option>
                             <option value="/">HOME</option>
                             <option value="/logout">LOG OUT</option>
                             <option value="/placeOrder">PLACE ORDERS</option>
@@ -105,12 +106,10 @@ const CheckOut = () => {
                         </Link><div className="nav--components">
                         <select
                             onChange={handleOptionChange}
-                            value={selectedOption}
+                            value={currentPath}
                             className="nav--select"
                         >
-                            <option value="" disabled hidden>
-                            More Options
-                            </option>
+                            <option value="/checkOut">CHECK OUT</option>
                             <option value="/">HOME</option>
                             <option value="/logout">LOG OUT</option>
                             <option value="/placeOrder">PLACE ORDERS</option>

@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import logo from "../images/logo.png";
 import GetSignedInEmail from "../../pages/SignInCheck.jsx";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 export default function Navbar() {
   const check = GetSignedInEmail();
   const navigate = useNavigate();
   const [selectedOption, setSelectedOption] = useState("");
+
+  const location = useLocation();
+  const currentPath = location.pathname;
 
   const handleOptionChange = (event) => {
     const selectedValue = event.target.value;
@@ -22,8 +25,7 @@ export default function Navbar() {
           <img src={logo} alt="Logo" className="nav--logo" />
         </Link>
           <div className="nav--components">
-            <select onChange={handleOptionChange} value={selectedOption} className="nav--select">
-              <option value="" disabled hidden>More Options</option>
+            <select onChange={handleOptionChange} value={currentPath} className="nav--select">
               <option value="/">HOME</option>
               <option value="/toOrder">TO ORDER</option>
               <option value="/logout">LOG OUT</option>
@@ -41,8 +43,7 @@ export default function Navbar() {
             <img src={logo} alt="Logo" className="nav--logo" />
           </Link>
           <div className="nav--components">
-            <select onChange={handleOptionChange} value={selectedOption} className="nav--select">
-              <option value="" disabled hidden>More Options</option>
+            <select onChange={handleOptionChange} value={currentPath} className="nav--select">
               <option value="/">HOME</option>
               <option value="/toOrder">TO ORDER</option>
               <option value="/signup">SIGN UP</option>

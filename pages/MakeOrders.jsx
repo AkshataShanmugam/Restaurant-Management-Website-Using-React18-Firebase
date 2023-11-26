@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../src/images/logo.png";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import SpecialDishes from "../src/components/MenuCard.jsx";
 import Footer from "../src/components/Footer.jsx";
 import data from "../src/components/fullMenu.jsx";
@@ -10,6 +10,9 @@ export default function MakeOrders() {
   const check = GetSignedInEmail();
   const navigate = useNavigate();
   const [selectedOption, setSelectedOption] = useState("");
+
+  const location = useLocation();
+  const currentPath = location.pathname;
 
   const specials = data.map((item) => {
     return <SpecialDishes key={item.id} item={item} />;
@@ -36,12 +39,10 @@ export default function MakeOrders() {
             <div className="nav--components">
               <select
                 onChange={handleOptionChange}
-                value={selectedOption}
+                value={currentPath}
                 className="nav--select"
               >
-                <option value="" disabled hidden>
-                  More Options
-                </option>
+                <option value="/placeOrder">TO ORDER</option>
                 <option value="/">HOME</option>
                 <option value="/logout">LOG OUT</option>
                 <option value="/checkOut">CHECK OUT</option>
