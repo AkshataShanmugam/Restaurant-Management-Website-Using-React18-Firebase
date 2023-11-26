@@ -6,6 +6,7 @@ import AboutUs from "./AboutUs.jsx"
 import Footer from "./Footer.jsx"
 import PreLoader from "../../pages/PreLoader.jsx"
 import data from "./menu.jsx"
+import ContactUs from "./ContactUs.jsx"
 
 export default function Main() {
 
@@ -51,6 +52,7 @@ export default function Main() {
                 {menuItems}
             </section> */}
             <AboutUs />
+            <ContactUs />
             <Footer />
         </div>
     )

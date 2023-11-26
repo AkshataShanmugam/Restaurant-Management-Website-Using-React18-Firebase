@@ -154,8 +154,7 @@ section {
     text-align: center;
     background-color: rgb(209, 199, 199);
     color: #0b0a0c ;
-    padding: 20px;
-    font-weight: bold;
+    padding: 10px;
 }
 
 .card--button {
@@ -487,3 +486,19 @@ ul{
 
 }
   
+.contact-us{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid rgb(51, 34, 34);
+    border-radius: 10px;
+    margin: 40px 75px;
+}
+
+.contact-phone{
+    margin: 20px;
+}
+
+.contact-email{
+    margin: 20px;
+}
