@@ -1,6 +1,6 @@
 import SpecialDishes from "./CheckOutOrders.jsx"
 import Data from "./CheckOutData.jsx"
-
+import MakePayment from "./MakePayment.jsx";
 import React, { useState}  from 'react';
 
 import { useNavigate } from 'react-router-dom';
@@ -120,6 +120,7 @@ const CheckOut = () => {
                     {specials}
                 </section>
                 <button className="button--navigate"> Order total: $ {price} </button>
+                <MakePayment />
             </div>
         )
     }

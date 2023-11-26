@@ -1,12 +1,12 @@
 import React from 'react'
 import GooglePayButton from "@google-pay/button-react"
-import CheckOut from './CheckOut';
+// import CheckOut from './CheckOut';
 
 export default function MakePayment() {
   let price = JSON.parse(localStorage.getItem('checkOutTotalPriceFinal'));
   return (
     <div>
-        <CheckOut />
+        {/* <CheckOut /> */}
         <div className='gpay--button'>
             <GooglePayButton
                 environment="TEST"
