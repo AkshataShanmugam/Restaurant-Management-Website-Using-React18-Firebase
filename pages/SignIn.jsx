@@ -23,7 +23,7 @@ const SignIn = () => {
   };
 
   const navigateToSignUp = () => {
-    navigate("/signUp");
+    navigate("/signup");
   };
   
   const signIn = (e) => {

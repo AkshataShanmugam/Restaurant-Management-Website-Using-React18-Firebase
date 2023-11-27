@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link, useNavigate} from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import SpecialDishes from "../src/components/SingatureDishes.jsx"
 import data from "../src/components/menu.jsx"
 import Nav from "../src/components/Navbar.jsx"
 import Footer from "../src/components/Footer.jsx"
+import ContactUs from "../src/components/ContactUs.jsx"
 import GetSignedInEmail from "./SignInCheck.jsx"
 
 export default function ToOrder() {
@@ -41,6 +42,7 @@ export default function ToOrder() {
                         </section>
                     </div>
                 </div>
+                <ContactUs />
                 <Footer />
             </div>
         )

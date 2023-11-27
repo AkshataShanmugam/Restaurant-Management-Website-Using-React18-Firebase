@@ -46,7 +46,7 @@ export default function Navbar() {
             <select onChange={handleOptionChange} value={currentPath} className="nav--select">
               {/* <option value = "" hidden>MORE OPTIONS</option> */}
               <option value="" hidden>
-                {currentPath === "/signIn" ? "LOGIN" : currentPath === "/forgotPassword" ? "FORGOT PASSWORD" : "MORE OPTIONS"}
+                {currentPath === "/signin" ? "LOGIN" : currentPath === "/forgotPassword" ? "FORGOT PASSWORD" : "MORE OPTIONS"}
               </option>
               <option value="/">HOME</option>
               <option value="/toOrder">TO ORDER</option>
