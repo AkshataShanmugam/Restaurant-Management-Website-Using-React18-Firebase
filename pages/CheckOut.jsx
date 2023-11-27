@@ -82,7 +82,7 @@ const CheckOut = () => {
         )
 
     } else { 
-        localStorage.setItem('checkOutTotalPrice', JSON.stringify(1));
+        localStorage.setItem('checkOutTotalPrice', JSON.stringify(0));
 
         let count = 0
         const specials = (temp).map(item => {
