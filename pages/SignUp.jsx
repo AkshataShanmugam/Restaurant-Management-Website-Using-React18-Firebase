@@ -66,9 +66,7 @@ const SignUp = () => {
           <form onSubmit={signUp}>
             <br></br>
             <h1>Create Account</h1>
-            <p className="sign-up--instructions">
-              Join our community and start exploring amazing features! Fill out the form below to get started.
-            </p>
+            <p className="sign-up--instructions">Join our community and start exploring amazing features!</p>
             <input className="sign-in--input"
               type="email"
               placeholder="Enter your email"

@@ -530,12 +530,10 @@ ul{
     border-radius: 50px;
 }
 
-@media (max-width: 1400px){
-    .sign-in-container{
-        height: 70vh;
-    }
+@media (max-height: 1000px){
+    .sign-in-container,
     .sign-up-container {
-        height: 80vh;
+        overflow: auto;
     }
 }
 
