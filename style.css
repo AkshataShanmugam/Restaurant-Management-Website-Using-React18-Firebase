@@ -530,6 +530,15 @@ ul{
     border-radius: 50px;
 }
 
+@media (max-width: 1400px){
+    .sign-in-container{
+        height: 70vh;
+    }
+    .sign-up-container {
+        height: 80vh;
+    }
+}
+
 @media (max-width: 1000px) {
     .inside-our-kichen--logo{
         width: 65vw;
@@ -579,32 +588,6 @@ ul{
 }
 
 @media (max-width: 800px) {
-    .sign-up-container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        width: 90vw;
-        height: 650px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px black;
-        background-color: aliceblue;
-    }
-
-    .sign-in-container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        width: 90vw;
-        height: 600px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px black;
-        background-color: aliceblue;
-    }
-
     .hero--all-text {
         margin: 20px;
         background-color: #0b0a0c;
